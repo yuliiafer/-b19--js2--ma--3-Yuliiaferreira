@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: gray;
+  margin: 2em 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  color: red;
+}
+
+label {
+  display: block;
+}
+
+.container,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+footer {
+  color: white;
+  text-align: center;
+  padding-left: 2em !important;
+}
+
+.product {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  width: 215px;
+  text-align: center;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loading {
+  display: inline-block;
+  padding: 10% 50%;
+}
+
+.loading:after {
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #ececec;
+  border-top: 1px solid #969695;
+  animation: loading 3.2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 1em;
+  border: none;
+  padding: 0.5em;
+  background-color: #c8c8c8;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background-color: #9e9f9a;
+  color: white;
+  cursor: pointer;
+}
+
+.form-control {
+  border: none !important;
+  margin-bottom: 1em;
+}
+.message {
+  width: 100%;
+  padding: 1em;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+}
+
+.message.error {
+  background-color: red;
+}
+
+.message.warning {
+  background-color: yellow;
+}
+
+.message.sucsess {
+  background-color: greenyellow;
+}
+
+.navbar {
+  padding: 1em;
+}
